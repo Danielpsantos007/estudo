@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="description" content="Aprendendo HTML">
+<meta name="keywods" content="html,css,js">
+<meta name="author" content="Daniel">
+
+<html>
+    <head>
+        <title>Projeto Bootstrap</title>
+
+        <!-- CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="container" style="background-color: darkolivegreen;">
+            <div id="meu_slideshow" class="carousel slide" data-ride="carousel" style="text-align: center">
+                
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/aluno1.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Aluno1</h3>
+                                <p>Texto 1</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/aluno2.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Aluno2</h3>
+                                <p>Texto 2</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/aluno3.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Aluno3</h3>
+                                <p>Texto 3</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/aluno4.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Aluno4</h3>
+                                <p>Texto 4</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <a class="carousel-control-prev" href="#meu_slideshow" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#meu_slideshow" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <!--Indicadores-->
+                <ol class="corousel-indicators">
+                    <li data-target="#meu_slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#meu_slideshow" data-slide-to="1"></li>
+                    <li data-target="#meu_slideshow" data-slide-to="2"></li>
+                    <li data-target="#meu_slideshow" data-slide-to="3"></li>
+                </ol>
+                </div>           
+            </div>
+
+            <footer>
+                <!-- JS -->
+                <script src="bootstrap/js/jquery.js"></script>
+                <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+            </footer>
+    </body>
+</html>

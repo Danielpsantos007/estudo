@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="description" content="Usando Bootstrap">
+<meta name="keywods" content="html,css,js">
+<meta name="author" content="Daniel">
+
+<html>
+    <head>
+        <title>Projeto Bootstrap</title>
+
+        <!-- CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
+    </head>
+    <body>
+            <p>Lista usando Bootstrap</p>
+            <table class="table table-hover">
+                <tr>
+                    <th>Item</th>
+                    <th>Cursos</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Bootstrap</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>HTML</th>
+                </tr>
+            </table>
+
+            <div class="container">
+                <h3>Collapse</h3>
+                <button class="btn btn-warning" data-toggle="collapse" data-target="#secreto">Mostre Mais</button>
+                <div class="collapse" id="secreto">
+                    Oi! Mensagem Secreta!
+                </div>
+                <br></br>
+
+                <h3>Popover</h3>
+                <button class="btn btn-primary" data-toggle="popover" data-content="Usando o Popover">Botão</button>
+            
+                <button class="btn btn-primary" data-toggle="popover" data-content="Usando o Popover" data-placement="left">Botão2</button>
+
+                <button class="btn btn-primary" title="Titulo" data-toggle="popover" data-content="Usando o Popover" data-placement="bottom">Botão3</button>
+            
+                <br></br>
+                <h3>Tooltip</h3>
+                <button class="btn btn-primary" data-toggle="tooltip" title="Oi botão!">Botão4</button>
+            
+                <br></br>
+                <h3>Modal</h3>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#conteudoModal">Botão5</button>
+                <!--Modal-->
+                    <div id="conteudoModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header"> <!--Titulo-->
+                                    <h5 class="modal-title" id="#conteudoModal">Modal 1</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span arial-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body"> <!--Conteúdo-->
+                                    Texto do meu Modal.
+                                </div>
+                                <div class="modal-footer"> <!--Rodapé-->
+                                    <button class="btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+            
+                <button class="btn btn-primary" data-whaterever="Daniel" data-toggle="modal" data-target="#conteudoModal2">Botão6</button>  
+                <!--Modal 2-->
+                    <div id="conteudoModal2" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header"> <!--Titulo-->
+                                    <h5 class="modal-title" id="#conteudoModal2">Modal 2</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span arial-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body"> <!--Conteúdo-->
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <span>Destinatario:</span>
+                                        </div>
+                                        <div class="col-8">    
+                                            <input type="text" name="para" class="form-control">
+                                        </div>
+                                    </div>
+                                        <br>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <span>Conteudo:</span>       
+                                        </div>
+                                        <div class="col-8">    
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal-footer"> <!--Rodapé-->
+                                    <button class="btn-secondary" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <H3>Scroollsplay</H3>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <div id="livro" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="#c1">Musica-1</a>
+                                <a class="list-group-item list-group-item-action" href="#c2">Musica-2</a>
+                                <a class="list-group-item list-group-item-action" href="#c3">Musica-3</a>
+                                <a class="list-group-item list-group-item-action" href="#c4">Musica-4</a>
+                                <a class="list-group-item list-group-item-action" href="#c5">Musica-5</a>
+                            </div>
+                        </div>
+                        <div class="col-8" id="caixaLivro" style="position: relative; height: 500px; overflow: auto;">
+                    <div data-spy="scroll" data-target="#livro" data-offset="0">
+                           <h3 id="c1">Cuida de Mim</h3>
+                           <p>Deus que abre portas
+                            Onde parece ser o fim
+                            Que traz à tona
+                            O melhor que há em mim
+                            
+                            Me faz de novo
+                            Perdi a noção de quem eu sou
+                            Me jogo em seus braços
+                            Pois cansado aqui estou
+                            
+                            Eu sei que você pode transformar
+                            Eu sei que você sempre esteve aqui
+                            E hoje eu vim aqui pra entregar
+                            Minha vida outra vez
+                            
+                            E quando o céu parece se fechar
+                            Seus olhos sempre voltam para mim
+                            Agora que não posso caminhar
+                            Cuida de mim
+                            Cuida de mim
+                            
+                            Deus de detalhes
+                            Que me ensina a prosseguir
+                            Virar minhas páginas
+                            E não pensar em desistir
+                            
+                            Toma minha vida
+                            Preenche o vazio em que estou
+                            Sou alma à deriva
+                            Procurando quem eu sou
+                            
+                            Eu sei que você pode transformar
+                            Eu sei que você sempre esteve aqui
+                            E hoje eu vim aqui pra entregar
+                            Minha vida outra vez
+                            
+                            E quando o céu parece se fechar
+                            Seus olhos sempre voltam para mim
+                            Agora que eu não posso caminhar
+                            Cuida de mim
+                            Cuida de mim
+                            
+                            Cuida de mim
+                            Cuida de mim
+                            
+                            E quando tudo passar
+                            E a tristeza se for
+                            De novo vou respirar
+                            E aliviar minha dor
+                            
+                            Eu sei que você pode transformar
+                            Eu sei que você sempre esteve aqui
+                            E hoje eu vim aqui pra entregar
+                            Minha vida outra vez
+                            
+                            E quando o céu parece se fechar
+                            Seus olhos sempre voltam para mim
+                            Agora que não posso caminhar
+                            Cuida de mim
+                            Cuida de mim
+                            
+                            Cuida de mim</p> 
+
+                           <h3 id="c2">Fênix</h3>
+                           <p>Esgote o meu tempo e veja o relógio voltar
+                            Me dê por vencido e eu voltarei a voar
+                            Não temo a chama a me incendiar
+                            A morte é apenas um passar
+                            
+                            O fogo que me envolve me consome
+                            E renova o meu ser
+                            Sempre há vida em mim
+                            Em meio às minhas cinzas, eu desperto
+                            E do chão do deserto
+                            Nasce uma rosa outra vez
+                            
+                            Provoque a mudança e eu continuarei a viver
+                            Destrua a esperança e eu a farei renascer
+                            No árido chão, vou florescer
+                            
+                            Apague o meu nome e eu voltarei a escrever
+                            Esqueça que existo e eu te farei perceber
+                            E quando disser que eu não posso ser
+                            Olhe ao seu redor e vai me ver
+                            
+                            O fogo que me envolve me consome
+                            E renova o meu ser
+                            Sempre há vida em mim
+                            Em meio às minhas cinzas. eu desperto
+                            E do chão do deserto
+                            Nasce uma rosa outra vez
+                            
+                            You’re gonna see me fly
+                            You’re gonna see me fly again
+                            You better watch the sky
+                            You’re gonna see me fly again
+                            
+                            You’re gonna see me fly
+                            You’re gonna see me fly again
+                            You better watch the sky
+                            You’re gonna see me fly again
+                            
+                            O fogo que me envolve me consome
+                            E renova o meu ser
+                            Sempre há vida em mim
+                            Em meio às minhas cinzas, eu desperto
+                            E do chão do deserto
+                            Nasce uma rosa outra vez
+                            Outra vez, outra vez, outra vez
+                            
+                            Em meio às minhas cinzas, eu desperto
+                            E do chão do deserto
+                            Nasce uma rosa outra vez.</p>
+
+
+                           <h3 id="c3">Capitulo-3</h3>
+                                Outra musica           
+
+                           <h3 id="c4">Capitulo-4</h3>
+                                Mais uma outra musica
+
+                           <h3 id="c5">Capitulo-5</h3>
+                                E por fim outra musica
+                        </div>
+                    </div>
+                </div>
+
+            <footer>
+                <!-- JS -->
+                <script src="bootstrap/js/jquery.js"></script>
+                <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script type="text/javascript"> /*Ativando o tootip*/
+                    $(function(){
+                        $('[data-toggle="tooltip"]').tooltip()
+                    });                   
+                </script>
+                <script> /*Ativando o popover*/
+                    $(function(){
+                        $('[data-toggle="popover"]').popover()
+                    });                   
+                </script>
+                <script> /*Adicionando destinatario no Modal-1*/
+                    $('#conteudoModal2').on('show.bs.modal', function(event){
+                    var button = $(event.relatedTarget);
+                    var recipient = button.data('whaterever');
+                    var modal = $(this);
+                    modal.find('.modal-title').text('Mensagem para' + recipient);
+                    modal.find('.modal-body input').val(recipient);
+                    });                   
+                </script>
+                <script>
+                    $('#caixaLivro').scrollspy({target:'#livro'})
+                </script>
+
+            </footer>
+    </body>
+</html>
